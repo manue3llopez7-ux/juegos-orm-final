@@ -1,0 +1,45 @@
+{% extends "maestra.html" %}
+{% block titulo %}Agregar Nuevo Juego{% endblock %}
+{% block contenido %}
+<h3 class="is-size-3">Agregar Nuevo Juego</h3>
+
+<form action="{{ url_for('guardar_juego') }}" method="post" class="box">
+    
+    <div class="field">
+        <label class="label" for="titulo">Título:</label>
+        <div class="control">
+            <input type="text" id="titulo" name="titulo" class="input" required>
+        </div>
+    </div>
+
+    <div class="field">
+        <label class="label" for="genero">Género:</label>
+        <div class="control">
+            <input type="text" id="genero" name="genero" class="input" required>
+        </div>
+    </div>
+    
+    <div class="field">
+        <label class="label" for="plataforma">Plataforma:</label>
+        <div class="control">
+            <input type="text" id="plataforma" name="plataforma" class="input" required>
+        </div>
+    </div>
+
+    <div class="field">
+        <label class="label" for="precio">Precio:</label>
+        <div class="control">
+            <input type="number" id="precio" name="precio" class="input" step="0.01" required>
+        </div>
+    </div>
+
+    <div class="field is-grouped">
+        <div class="control">
+            <button type="submit" class="button is-success mt-2">Guardar Juego</button>
+        </div>
+        <div class="control">
+            <a href="{{ url_for('juegos') }}" class="button is-light mt-2">Volver a la Lista</a>
+        </div>
+    </div>
+</form>
+{% endblock %}

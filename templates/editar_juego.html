@@ -1,0 +1,47 @@
+{% extends "maestra.html" %}
+{% block titulo %}Editar Juego: {{ juego.titulo }}{% endblock %}
+{% block contenido %}
+<h3 class="is-size-3">Editar Juego</h3>
+
+<form action="{{ url_for('actualizar_juego') }}" method="post" class="box">
+    
+    <input type="hidden" name="id" value="{{ juego.id }}">
+    
+    <div class="field">
+        <label class="label" for="titulo">Título:</label>
+        <div class="control">
+            <input type="text" id="titulo" name="titulo" value="{{ juego.titulo }}" class="input" required>
+        </div>
+    </div>
+
+    <div class="field">
+        <label class="label" for="genero">Género:</label>
+        <div class="control">
+            <input type="text" id="genero" name="genero" value="{{ juego.genero }}" class="input" required>
+        </div>
+    </div>
+    
+    <div class="field">
+        <label class="label" for="plataforma">Plataforma:</label>
+        <div class="control">
+            <input type="text" id="plataforma" name="plataforma" value="{{ juego.plataforma }}" class="input" required>
+        </div>
+    </div>
+
+    <div class="field">
+        <label class="label" for="precio">Precio:</label>
+        <div class="control">
+            <input type="number" id="precio" name="precio" value="{{ juego.precio }}" class="input" step="0.01" required>
+        </div>
+    </div>
+
+    <div class="field is-grouped">
+        <div class="control">
+            <button type="submit" class="button is-success mt-2">Guardar Cambios</button>
+        </div>
+        <div class="control">
+            <a href="{{ url_for('juegos') }}" class="button is-light mt-2">Cancelar y Volver</a>
+        </div>
+    </div>
+</form>
+{% endblock %}
