@@ -35,5 +35,6 @@ Una aplicación web robusta desarrollada en Python utilizando el framework Flask
 
 ### 1. Clonar el repositorio
 ```bash
-git clone [https://github.com/tu-usuario/nombre-repo.git](https://github.com/tu-usuario/nombre-repo.git)
-cd juegos_orm_final
+[git clone [https://github.com/tu-usuario/nombre-repo.git](https://github.com/tu-usuario/nombre-repo.git)
+
+cd juegos_orm_final](https://github.com/manue3llopez7-ux/juegos-orm-final.git)
