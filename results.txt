@@ -1,0 +1,18 @@
+test_get_juego_404 (test_api.APITestCase.test_get_juego_404)
+Prueba obtener un juego que no existe. ... ok
+test_get_juegos (test_api.APITestCase.test_get_juegos)
+Prueba obtener la lista de juegos. ... ok
+test_password_hashing (test_models.UserModelTestCase.test_password_hashing)
+Prueba que la contraseña se hashea correctamente. ... ok
+test_index_page (test_routes.RoutesTestCase.test_index_page)
+Prueba que la página de inicio carga correctamente. ... ok
+test_login_page_loads (test_routes.RoutesTestCase.test_login_page_loads)
+Prueba que la página de login carga. ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.799s
+
+OK
+Sentry is attempting to send 6 pending events
+Waiting up to 2 seconds
+Press Ctrl-Break to quit
